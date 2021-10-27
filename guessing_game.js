@@ -1,0 +1,1 @@
+// let num = get_number("Welcome to The Guessing Game! \r\n Please enter the max number for the game.")
