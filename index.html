@@ -10,19 +10,20 @@
 <body>
     <div class="container">
         <h1 class="title">Guessing Game</h1>
+        <h3 class="description">Guess a number between 1 and 25</h3>
         <p id="answer"></p>
         <div class="form-container">
             <form>
-                <div class="form">
+                <div class="form" >
                     <label>Your guess:</label>
                     <input type="text" id="guess" class="form-entry">
-                    <input type="submit" class="guess-button" ></input>
                 </div>
+                <input type="submit" class="guess-button" onclick='do_guess();return false;'></input>
             </form>
         </div>
         <p id="message"></p>
     </div>
-    <script src="guessing_game.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="functions.js"></script>
 </body>
 </html>
