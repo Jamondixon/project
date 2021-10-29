@@ -8,21 +8,21 @@
     <title>Guessing Game</title>
 </head>
 <body>
+    <h1 class="title">Guessing Game</h1>
     <div class="container">
-        <h1 class="title">Guessing Game</h1>
         <!-- <h3 class="description">Guess a number between 1 and 25</h3> -->
         <p id="answer"></p>
         <div class="form-container">
             <form>
                 <div class="form" >
-                    <label>Your guess:</label>
+                    <label class="guess-label">Your guess:</label>
                     <input type="text" id="guess" class="form-entry">
                 </div>
                 <input type="submit" class="guess-button" onclick='do_guess();return false;'></input>
             </form>
         </div>
-        <p id="message"></p>
     </div>
+    <p id="message"></p>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="functions.js"></script>
 </body>

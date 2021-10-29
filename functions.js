@@ -40,11 +40,12 @@ function do_guess() {
     if(guess == num) {
         count ++;
         if (guessArray.includes(guess) === false)guessArray.push(guess);
-        message.innerHTML = "You Got it! It took you " + guessArray.length + " tries! Your guesses were " + guessArray
+        message.innerHTML = "You Got it! It took you " + guessArray.length + " tries! <br> Your guesses were " + guessArray
     } else if (guess > num &&  guess <= pickedNumber){
         message.innerHTML = "No try a lower number.";
         count ++;
-        if (guessArray.includes(guess) === false)guessArray.push(guess);
+        if (guessArray.includes(guess) === false)guessArray.push(guess)
+        else message.innerHTML = "You have already guessed this number!"
         console.log(guessArray)
     } else if (isNaN(guess)) {
         message.innerHTML = "That is not a number!"
@@ -53,11 +54,12 @@ function do_guess() {
     } else if (guess < num && guess <= pickedNumber){
         message.innerHTML = "No try a higher number.";
         count ++;
-        if (guessArray.includes(guess) === false)guessArray.push(guess);
+        if (guessArray.includes(guess) === false)guessArray.push(guess)
+        else message.innerHTML = "You have already guessed this number!"
         console.log(guessArray)
     }else {
         message.innerHTML = "That number is not in range, try again!"
     }
 }
 
-// guess < num && guess <= pickedNumber
+
