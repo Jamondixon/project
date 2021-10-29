@@ -17,12 +17,12 @@ function get_number(prompt){
     
     document.getElementById("answer").innerHTML = `Please guess a number between 1 and ${initial_number}! `
     
-    console.log(initial_number);
+    // console.log(initial_number);
     return(initial_number);
 }
 
 
-console.log(num)
+// console.log(num)
 var count = 0
 let guessArray = []
 
@@ -46,7 +46,7 @@ function do_guess() {
         count ++;
         if (guessArray.includes(guess) === false)guessArray.push(guess)
         else message.innerHTML = "You have already guessed this number!"
-        console.log(guessArray)
+        // console.log(guessArray)
     } else if (isNaN(guess)) {
         message.innerHTML = "That is not a number!"
     } else if (guess < 1) {
@@ -56,7 +56,7 @@ function do_guess() {
         count ++;
         if (guessArray.includes(guess) === false)guessArray.push(guess)
         else message.innerHTML = "You have already guessed this number!"
-        console.log(guessArray)
+        // console.log(guessArray)
     }else {
         message.innerHTML = "That number is not in range, try again!"
     }
