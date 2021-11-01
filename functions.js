@@ -1,4 +1,5 @@
 let pickedNumber = get_number("Welcome to The Guessing Game! \r\n Please enter the max number for the game.")
+
 let num = Math.floor(Math.random() * pickedNumber) + 1;
 
 
@@ -21,16 +22,9 @@ function get_number(prompt){
     return(initial_number);
 }
 
-
 // console.log(num)
 var count = 0
 let guessArray = []
-
-
-let previousGuess = document.createElement('h4');
-previousGuess.textContent = '';
-document.body.appendChild(previousGuess);
-
 
 function do_guess() {
     
@@ -61,5 +55,3 @@ function do_guess() {
         message.innerHTML = "That number is not in range, try again!"
     }
 }
-
-
