@@ -75,8 +75,6 @@ function animate() {
     requestAnimationFrame( animate )
     cube.rotation.x += 0.01;
     cube.rotation.y += 0.05;
-    sphere.rotation.x += 0.01;
-    sphere.rotation.y += 0.05;
     wireframeCube.rotation.x -= 0.01;
     wireframeCube.rotation.y -= 0.03;
     renderer.render( scene, camera )
