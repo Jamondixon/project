@@ -23,7 +23,7 @@ window.addEventListener( 'resize', () => {
 
 // basic cube
 var geometry = new THREE.BoxGeometry( 1, 1, 1)
-var material = new THREE.MeshStandardMaterial( { color: "#82bfa1", flatShading: true, metalness: .5, roughness: 1 })
+var material = new THREE.MeshStandardMaterial( { color: "#82bfa1", flatShading: true, metalness: 0, roughness: 1 })
 var cube = new THREE.Mesh ( geometry, material )
 scene.add( cube )
 
@@ -47,10 +47,10 @@ scene.add( pointLight );
 
 function animate() {
     requestAnimationFrame( animate )
-    cube.rotation.x += 0.04;
-    cube.rotation.y += 0.04;
+    cube.rotation.x += 0.01;
+    cube.rotation.y += 0.05;
     wireframeCube.rotation.x -= 0.01;
-    wireframeCube.rotation.y -= 0.01;
+    wireframeCube.rotation.y -= 0.03;
     renderer.render( scene, camera )
 }
 animate()
